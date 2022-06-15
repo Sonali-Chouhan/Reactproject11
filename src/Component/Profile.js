@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useForm, Controller } from "react-hook-form";
+//import { useForm, Controller } from "react-hook-form";
 // import Select from "react-select";
 // import MultiSelect from  'react-multiple-select-dropdown-lite'
 // import  'react-multiple-select-dropdown-lite/dist/index.css'
@@ -7,7 +7,7 @@ import { useForm, Controller } from "react-hook-form";
 
 const Profile = () => {
     
-    const [value, setvalue] = useState()
+    // const [value, setvalue] = useState()
     const [state,setState]=useState({
         userList:[],
         firstName:"",
@@ -16,12 +16,6 @@ const Profile = () => {
         password:"",
         number:""
     })
-    const onSubmit=(data)=>{
-        
-
-        console.log("data",data)
-
-    }
     const handleSave=(event)=>{
         event.preventDefault()
         var userList=state.userList

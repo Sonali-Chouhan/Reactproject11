@@ -1,6 +1,8 @@
 import React,{useEffect, useState} from 'react'
 
 const Home = () => {
+  // const datas=process.env.REACT_APP_TOKEN;
+// console.log("datas",datas)
   const [list,setlist] = useState([])
  const [data,setdata] = useState({
      name: '',

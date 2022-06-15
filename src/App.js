@@ -7,10 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import UserTable from './Component/User-Table';
+//require('dotenv').config()
 function App() {
+  
   return (
     <div className="App">
-    <Router>
+      <h1>hello</h1>
+      <p>hello{process.env.REACT_APP_TOKEN}</p>
+    {/* <Router>
       <Header/>
       <Routes>
         <Route  path="/" element={<Home/>}/>
@@ -18,7 +22,7 @@ function App() {
         <Route path="user-table" element={<UserTable/>}/>
         <Route path="about" element={<About/>}/>
       </Routes>
-    </Router>
+    </Router> */}
     
     </div>
   );
